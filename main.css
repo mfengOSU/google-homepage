@@ -1,29 +1,41 @@
+/*General Styles*/
+html, body{
+    height: 100%;
+}
 body {
     background-color: white;
     color: hsl(0, 0%, 44%);
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: auto;
 }
 a {
     color: hsl(0, 0%, 20%);
     text-decoration: none;
 }
+ul {
+    list-style: none;
+}
+
+/*Page Styles*/
+.page-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 /*Navbar Styles*/
-.navbar {
+nav {
+    flex: 1 1 auto;
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0 0 20px;
 }
-.navbar ul {
+nav ul {
     display: flex;
-    list-style: none;
 }
-.navbar ul li {
+nav ul li {
     padding: 10px;
 }
 .navbar-left {
@@ -36,13 +48,13 @@ a {
     padding-left: 0;
 }
 #app-item {
-    padding-top: 6px !important; 
+    padding-top: 6px; 
 }
 #account-item {
-    padding-top: 0 !important; 
+    padding-top: 0; 
     padding-left: 0;
 }
-.navbar ul li button {
+nav ul li button {
     border: none;
     background-color: white;
     color: hsl(0, 0%, 49%);
@@ -53,11 +65,12 @@ a {
 
 /*Main styles*/
 main {
+    flex: 100 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 52px 52px;
+    padding: 0 0;
 
 }
 #google-logo {
@@ -107,5 +120,25 @@ form {
     color: hsl(0, 10%, 25%)
 }
 
+
+/*Footer styling*/
+footer {
+    background-color: hsl(0, 0%, 95%);
+    width: 100%;
+    height: 5rem;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+footer ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    padding: 20px;
+}
 
 

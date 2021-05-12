@@ -7,53 +7,57 @@
         <link href="main.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar">          
-            <ul class="navbar-left">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Store">Store</a></li>            
-            </ul>     
-            <ul class="navbar-right">
-                <li><a href="#Gmail">Gmail</a></li>
-                <li><a href="#Images">Images</a></li>
-                <li id="app-item">
-                    <button class="material-icons">
-                    apps
-                    </button>
-                </li>
-                <li id="account-item"> 
-                    <button class="material-icons" id="account-icon">
-                        account_circle
-                    </button>                        
-                </li>
-            </ul>             
-        </nav>
-        <main>
-            <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-            <form action="" method="GET">
-                <div class="container" id="search">
-                    <span class="material-icons" id="search-icon">
-                        search
-                    </span>
-                    <input type="text" id="search-bar">
-                    <span class="material-icons" id="mic-icon">
-                        mic
-                    </span>
-                </div>
-                <div class="container">
-                    <input class="button" type="button" value="Google Search">
-                    <input class="button" type="button" value="I'm Feeling Lucky"> 
-                </div>
-            </form>
-        </main>
-        <footer>
-            <ul>
-                <li><a href="#Advertising">Advertising</a></li>
-                <li><a href="#Business">Business</a></li>
-                <li><a href="#How-Search-Works">How Search works</a></li>
-                <li><a href="#Privacy">Privacy</a></li>
-                <li><a href="#Terms">Terms</a></li>
-                <li><a href="#Settings">Settings</a></li>
-            </ul>
-        </footer>     
+        <div class="page-container">
+            <nav>          
+                <ul class="navbar-left">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Store">Store</a></li>            
+                </ul>     
+                <ul class="navbar-right">
+                    <li><a href="#Gmail">Gmail</a></li>
+                    <li><a href="#Images">Images</a></li>
+                    <li id="app-item">
+                        <button class="material-icons">
+                        apps
+                        </button>
+                    </li>
+                    <li id="account-item"> 
+                        <button class="material-icons" id="account-icon">
+                            account_circle
+                        </button>                        
+                    </li>
+                </ul>             
+            </nav>
+            <main>
+                <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+                <form action="/" method="GET">
+                    <div class="container" id="search">
+                        <span class="material-icons" id="search-icon">
+                            search
+                        </span>
+                        <input type="text" id="search-bar">
+                        <span class="material-icons" id="mic-icon">
+                            mic
+                        </span>
+                    </div>
+                    <div class="container">
+                        <input class="button" type="button" value="Google Search">
+                        <input class="button" type="button" value="I'm Feeling Lucky"> 
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <ul class="footer-left">
+                    <li><a href="#Advertising">Advertising</a></li>
+                    <li><a href="#Business">Business</a></li>
+                    <li><a href="#How-Search-Works">How Search works</a></li>
+                </ul>
+                <ul class="footer-right">
+                    <li><a href="#Privacy">Privacy</a></li>
+                    <li><a href="#Terms">Terms</a></li>
+                    <li><a href="#Settings">Settings</a></li>
+                </ul>
+            </footer>     
+        </div>
     </body>
 </html>

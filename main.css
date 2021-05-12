@@ -5,6 +5,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 /*Navbar Styles*/
 .navbar {
@@ -57,8 +58,45 @@ main {
     padding: 52px 0;
 }
 #google-logo {
-    width: 272px;
-    height: 92px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 20px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    margin-bottom: 30px;
+}
+#search{
+    position: relative;
+}
+#search-icon {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+#mic-icon {
+    position: absolute;
+    left: 470px;
+    top: 8px;
+}
+#search-bar {
+    width: 500px;
+    height: 35px;
+    border-radius: 25px;
+    border-color: hsl(0, 0%, 80%);
+}
+
+.button {
+    border: none;
+    height: 37px;
+    width: 10em;
+    margin: 0 5px;
+    background-color: hsl(0, 0%, 97%);
+    color: hsl(0, 10%, 25%)
 }
 
 

@@ -7,6 +7,11 @@ body {
     padding: 0;
     overflow: auto;
 }
+a {
+    color: hsl(0, 0%, 20%);
+    text-decoration: none;
+}
+
 /*Navbar Styles*/
 .navbar {
     display: flex;
@@ -30,10 +35,6 @@ body {
     margin: 12px 0 12px 20px;
     padding-left: 0;
 }
-a {
-    color: hsl(0, 0%, 20%);
-    text-decoration: none;
-}
 #app-item {
     padding-top: 6px !important; 
 }
@@ -49,17 +50,17 @@ a {
 #account-icon{
     font-size: 38px;
 }
+
 /*Main styles*/
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 52px 0;
+    padding: 52px 52px;
+
 }
 #google-logo {
-    max-width: 100%;
-    max-height: 100%;
     margin: 20px 0;
 }
 form {
@@ -72,6 +73,7 @@ form {
 }
 #search{
     position: relative;
+    display: flex;
 }
 #search-icon {
     position: absolute;
@@ -80,14 +82,20 @@ form {
 }
 #mic-icon {
     position: absolute;
-    left: 470px;
+    left: 510px;
     top: 8px;
 }
 #search-bar {
-    width: 500px;
+    width: 460px;
     height: 35px;
     border-radius: 25px;
-    border-color: hsl(0, 0%, 80%);
+    border-color: hsl(0, 0%, 90%);
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 40px;
+}
+#search-bar:focus {
+    outline: none;
 }
 
 .button {
